@@ -1,0 +1,40 @@
+//- Connecting mixins for this template
+//- include ../mixins/button
+//- include ../mixins/link
+
+//- Variables
+block variables
+
+doctype html
+html(lang="en")
+    head
+        meta(name="viewport" content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible" content="ie=edge")
+        meta(http-equiv="Content-Type" content="text/html; charset=UTF-8")
+        meta(name="robots" content="index, follow")
+
+        //- Connecting styles
+        link(rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css")
+        link(rel="stylesheet" type="text/css" href="/style/main.css")
+        link(rel="shortcut icon" href="img/favicon.ico" type="image/x-icon")
+
+        //- Connecting Fontawesome
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+
+        meta(name="description" content="")
+        meta(name="keywords" content="")
+        title #{title}
+        
+        //[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]
+    
+    body(class="" + thisPage)
+        include header
+        
+        main.main
+            block content
+        
+        include footer
+            
+    //- Connecting JS scripts
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js")
+    script(async src="/js/main.js")

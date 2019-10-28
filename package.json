@@ -1,0 +1,27 @@
+{
+  "name": "Webpuch-template",
+  "version": "1.0.0",
+  "description": "Webpack assembly for layout. It uses Pug, SCSS, Autoprefixer, Babel",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack-dev-server --open --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnarAgaev/Webpuch-template.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnarAgaev/Webpuch-template/issues"
+  },
+  "homepage": "https://github.com/AnarAgaev/Webpuch-template#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
+  }
+}

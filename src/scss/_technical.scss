@@ -1,0 +1,182 @@
+//- Headers
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    position: relative;
+    max-width: 83.33333vw;
+    font-family: inherit;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0.33em 0 0.33em;
+}
+
+h1, .h1 {
+    font-size: 75.757px;
+    font-size: 3.95vw;
+    @media only screen and (max-width: $screen-medium) {
+        font-size: 24px;
+    }
+
+    color: $color-primary;
+}
+
+h2, .h2 {
+    font-size: 56.832px;
+    font-size: 2.96vw;
+    @media only screen and (max-width: $screen-medium) {
+        font-size: 22px;
+    }
+}
+
+h3, .h3 {
+    font-size: 42.635px;
+    font-size: 2.22vw;
+    @media only screen and (max-width: $screen-medium) {
+        font-size: 20px;
+    }
+}
+
+h4, .h4 {
+    font-size: 31.984px;
+    font-size: 1.667vw;
+    @media only screen and (max-width: $screen-medium) {
+        font-size: 18px;
+    }
+}
+
+h5, .h5 {
+    font-size: 23.994px;
+    font-size: 1.25vw;
+    @media only screen and (max-width: $screen-medium) {
+        font-size: 18px;
+    }
+}
+
+h6, .h6 {
+    font-size: 18px;
+    font-size: 0.938vw;
+    @media only screen and (max-width: $screen-medium) {
+        font-size: 18px;
+    }
+}
+
+//- Text
+p {
+    position: relative;
+    font-family: inherit;
+    padding: 0.7em 0 0.7em;
+    line-height: 1.6em;
+    font-weight: 100;
+    font-size: 20px;
+    @media only screen and (max-width: $screen-medium) {
+        font-size: 18px;
+    }
+}
+
+//- Buttons
+.button,
+a.button,
+button.button,
+input.button {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    background-color: $color-primary;
+    color: white;
+    padding: 0.3em 1.77em 0.36em;
+    margin: 0;
+    border-radius: 999px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 0 0 rgba(239, 47, 58, 0);
+    transition: $func-animation;
+
+    &:hover {
+       background-color: $color-hover;
+       box-shadow: 0 0 0 0.33em rgba(239, 47, 58, .33);
+    }
+}
+
+
+//- Accent text on some pages
+.accent-text {
+    background-color: $color-primary;
+    padding-right: 10px;
+    padding-bottom: 5px;
+    font-size: 75.757px;
+    font-weight: bold;
+    font-size: 1.8vw;
+    line-height: 1.07;
+    text-transform: uppercase;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 100%;
+        background-color: #ef2f3a;
+    }
+
+    &_lite {
+        background-color: white;
+        color: $color-primary;
+        font-weight: 900;
+    }
+}
+
+//- Icons
+.icon-link {
+    display: inline-block;
+    text-decoration: none;
+    color:$color-primary-font;
+    position: relative;
+    cursor: pointer;
+    width: 43px;
+    height: 43px;
+    line-height: 39px;
+    text-align: center;
+    margin-right: 7px;
+    font-size: 2.7vh;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -1px;
+        z-index: -1;
+        border-radius: 50%;
+        background-color: $color-primary;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        transition: transform .2s ease-out;
+    }
+
+    &:hover::before {
+        transform: scale(1);
+    }
+}
+
+
+//- Links
+.anchor-link {
+    color: $color-primary;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0 5px;
+
+    &:hover {
+        text-decoration: none;
+        color: $color-hover;
+    }
+}
+
+

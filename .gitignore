@@ -1,0 +1,5 @@
+# Ignore node modules files
+/node_modules/
+
+# Ignore preproduction directory
+/dist/**/*

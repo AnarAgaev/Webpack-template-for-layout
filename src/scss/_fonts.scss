@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900&display=swap&subset=latin-ext');
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 100;
+    src: url('/font/SofiaPro/SofiaProUltraLight/SofiaProUltraLight.eot');
+    src: local('Sofia Pro UltraLight'), local('SofiaProUltraLight'),
+        url('/font/SofiaPro/SofiaProUltraLight/SofiaProUltraLight.eot?#iefix') format('embedded-opentype'),
+        url('/font/SofiaPro/SofiaProUltraLight/SofiaProUltraLight.woff2') format('woff2'),
+        url('/font/SofiaPro/SofiaProUltraLight/SofiaProUltraLight.woff') format('woff'),
+        url('/font/SofiaPro/SofiaProUltraLight/SofiaProUltraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 200;
+    src: url('/font/SofiaPro/SofiaProExtraLight/SofiaProExtraLight.eot');
+    src: local('Sofia Pro ExtraLight'), local('SofiaProExtraLight'),
+        url('/font/SofiaPro/SofiaProExtraLight/SofiaProExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('/font/SofiaPro/SofiaProExtraLight/SofiaProExtraLight.woff2') format('woff2'),
+        url('/font/SofiaPro/SofiaProExtraLight/SofiaProExtraLight.woff') format('woff'),
+        url('/font/SofiaPro/SofiaProExtraLight/SofiaProExtraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 300;
+    src: url('/font/SofiaPro/SofiaProLight/SofiaProLight.eot');
+    src: local('Sofia Pro Light'), local('SofiaProLight'),
+        url('/font/SofiaPro/SofiaProLight/SofiaProLight.eot?#iefix') format('embedded-opentype'),
+        url('/font/SofiaPro/SofiaProLight/SofiaProLight.woff2') format('woff2'),
+        url('/font/SofiaPro/SofiaProLight/SofiaProLight.woff') format('woff'),
+        url('/font/SofiaPro/SofiaProLight/SofiaProLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/font/SofiaPro/SofiaProRegular/SofiaProRegular.eot');
+    src: local('Sofia Pro Regular'), local('SofiaProRegular'),
+        url('/font/SofiaPro/SofiaProRegular/SofiaProRegular.eot?#iefix') format('embedded-opentype'),
+        url('/font/SofiaPro/SofiaProRegular/SofiaProRegular.woff2') format('woff2'),
+        url('/font/SofiaPro/SofiaProRegular/SofiaProRegular.woff') format('woff'),
+        url('/font/SofiaPro/SofiaProRegular/SofiaProRegular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/font/SofiaPro/SofiaProMedium/SofiaProMedium.eot');
+    src: local('Sofia Pro Medium'), local('SofiaProMedium'),
+        url('/font/SofiaPro/SofiaProMedium/SofiaProMedium.eot?#iefix') format('embedded-opentype'),
+        url('/font/SofiaPro/SofiaProMedium/SofiaProMedium.woff2') format('woff2'),
+        url('/font/SofiaPro/SofiaProMedium/SofiaProMedium.woff') format('woff'),
+        url('/font/SofiaPro/SofiaProMedium/SofiaProMedium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: bold;
+    src: url('/font/SofiaPro/SofiaProBold/SofiaProBold.eot');
+    src: local('Sofia Pro Bold'), local('SofiaProBold'),
+        url('/font/SofiaPro/SofiaProBold/SofiaProBold.eot?#iefix') format('embedded-opentype'),
+        url('/font/SofiaPro/SofiaProBold/SofiaProBold.woff2') format('woff2'),
+        url('/font/SofiaPro/SofiaProBold/SofiaProBold.woff') format('woff'),
+        url('/font/SofiaPro/SofiaProBold/SofiaProBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sofia Pro';
+    font-style: normal;
+    font-weight: 900;
+    src: url('/font/SofiaPro/SofiaProBlack/SofiaProBlack.eot');
+    src: local('Sofia Pro Black'), local('SofiaProBlack'),
+        url('/font/SofiaPro/SofiaProBlack/SofiaProBlack.eot?#iefix') format('embedded-opentype'),
+        url('/font/SofiaPro/SofiaProBlack/SofiaProBlack.woff2') format('woff2'),
+        url('/font/SofiaPro/SofiaProBlack/SofiaProBlack.woff') format('woff'),
+        url('/font/SofiaPro/SofiaProBlack/SofiaProBlack.ttf') format('truetype');
+}
