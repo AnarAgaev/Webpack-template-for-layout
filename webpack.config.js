@@ -15,4 +15,20 @@ module.exports = {
         overlay: true // Show errors and warnings in the browser vewport
     },
     devtool: 'source-map', // source-paps
+    module: {
+        rules: [
+            {
+                test: /\.m?js$/,
+                exclude: /(node_modules)/,
+                use: {
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['@babel/preset-env']
+                    }
+                }
+            }
+        ]
+    },
+    plugins: [
+    ]
 };
