@@ -13,5 +13,6 @@ module.exports = {
         contentBase: path.join(__dirname, './dist'),
         compress: true, // Enable gzip compression for everything served
         overlay: true // Show errors and warnings in the browser vewport
-    }
+    },
+    devtool: 'source-map', // source-paps
 };
