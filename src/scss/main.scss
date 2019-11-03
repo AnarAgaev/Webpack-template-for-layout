@@ -1,5 +1,36 @@
 // INCLUDE STYLE CONPONENTS
-@import 'variable';
 @import 'fonts';
+@import 'variables';
+@import 'libs';
 @import 'default-tempate';
 @import 'technical';
+
+@media (max-width: 720px) {
+    body {
+        background-color: green;
+    }
+}
+
+body {
+    display: flex;
+}
+
+@media (max-width: 720px) {
+    body {
+        display: block;
+        color: red;
+    }
+}
+
+h1 {
+    color: greenyellow;
+}
+h2 {
+    color: gold;
+}
+h3 {
+    color: gold;
+}
+h4 {
+    color: gold;
+}
