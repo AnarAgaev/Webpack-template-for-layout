@@ -14,13 +14,17 @@ block variables
 block content
     .container
         .row
-            .offset-lg-3.col-lg-6
+            .col-lg-12
                 h1 Hello Webpack!
-            .col-lg-6.mt-5
-                img(src="img/png.png" alt="" style="width: 200px;")
-            .col-lg-6.mt-5
-                img(src="img/jpg.jpg" alt="" style="width: 200px;")
-            .col-lg-6.mt-5
-                img(src="img/gif.gif" alt="" style="width: 200px;")
-            .col-lg-6.mt-5
-                img(src="img/svg.svg" alt="" style="width: 200px;")
+            .col-lg-3.mt-5
+                | png
+                img(src="img/png.png" alt="" style="max-width: 100%; display: block; margin: 0 auto;")
+            .col-lg-3.mt-5
+                | jpg
+                img(src="img/jpg.jpg" alt="" style="max-width: 100%; display: block; margin: 0 auto;")
+            .col-lg-3.mt-5
+                | gif
+                img(src="img/gif.gif" alt="" style="max-width: 100%; display: block; margin: 0 auto;")
+            .col-lg-3.mt-5
+                | svg
+                img(src="img/svg.svg" alt="" style="max-width: 100%; display: block; margin: 0 auto;")
