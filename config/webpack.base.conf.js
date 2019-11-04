@@ -1,24 +1,26 @@
-const path = require('path');
-const fs = require('fs');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path                 = require('path'),
+	  fs                   = require('fs'),
+	  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
+	  CopyWebpackPlugin    = require('copy-webpack-plugin'),
+	  HtmlWebpackPlugin    = require('html-webpack-plugin');
 
 const PATHS = {
 	src: path.join(__dirname, '../src'),
-	dist: path.join(__dirname, '../dist'),
+	dist: path.join(__dirname, '../dist')
 };
 
-const PAGES_DIR = `${PATHS.src}/pug/pages/`;
-const PAGES = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
+const PAGES_DIR = `${PATHS.src}/pug/pages/`,
+	  PAGES     = fs.readdirSync(PAGES_DIR).filter(fileName => fileName.endsWith('.pug'));
 
+/**
+ * Webpack base configuration
+ */
 module.exports = {
-	// BASE config 
 	externals: {
 		paths: PATHS
 	},
 	entry: {
-		app: PATHS.src,
+		main: PATHS.src,
 	},
 	output: {
 		filename: 'js/[name].[hash].js',
