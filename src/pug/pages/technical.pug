@@ -1,10 +1,12 @@
 //- Include the template used on this page
-extends ../../template/default/default
+extends ../template/default/default
 
 //- VARIABLES FOR INCLUDE THIS IN USED TEMPLATE
 block variables
-    - var title      = 'Initial Template | technical page'
-    - var thisPage   = 'page-technical'
+    - var title       = 'Initial Template | technical page'
+    - var description = 'Write description for the page here'
+    - var keywords    = 'Write keywords for the page here'
+    - var pageClass   = 'page-technical'
     
 //- Conntecting MIXINS for this page
 
@@ -137,6 +139,3 @@ block content
             a.anchor-link(href="#") Active link
             a.anchor-link(href="#") Focus link
             a.anchor-link(href="#") Visited link
-
-
-

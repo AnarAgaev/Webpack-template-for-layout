@@ -1,0 +1,16 @@
+//- Include used template for this page
+extends ../template/default/default
+
+//- VARIABLES FOR INCLUDE THIS IN USED TEMPLATE
+block variables
+    - var title       = 'Webpack template'
+    - var description = 'Write description for the page here'
+    - var keywords    = 'Write keywords for the page here'
+    - var pageClass   = 'page-index'
+    
+//- Conntecting MIXINS for this page
+//- include ../mixins/news
+
+block content
+    h1 Hello world!
+    img(src="img/1200px-Daffy_Duck.svg.png" alt="" style="width: 300px;")
