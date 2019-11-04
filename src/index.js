@@ -1,5 +1,5 @@
 // Includes custom scripts
-import './js/common';
+import './js/main';
 
 // Include vendor styles
 import 'normalize.css';
