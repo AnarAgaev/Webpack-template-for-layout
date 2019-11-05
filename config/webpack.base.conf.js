@@ -2,7 +2,8 @@ const path                 = require('path'),
 	  fs                   = require('fs'),
 	  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
 	  CopyWebpackPlugin    = require('copy-webpack-plugin'),
-	  HtmlWebpackPlugin    = require('html-webpack-plugin');
+      HtmlWebpackPlugin    = require('html-webpack-plugin'),
+      ImageminPlugin = require('imagemin-webpack-plugin').default;
 
 const PATHS = {
 	src: path.join(__dirname, '../src'),
@@ -98,7 +99,21 @@ module.exports = {
 			{ from: `${PATHS.src}/img`, to: 'img' },
 			{ from: `${PATHS.src}/font`, to: 'font' },
 			{ from: `${PATHS.src}/static`, to: '' }
-		]),
+        ]),
+        new ImageminPlugin({
+            disable: process.env.NODE_ENV === 'production',
+            test: /\.(jpe?g|png|gif|svg)$/i,
+            optipng: {
+                optimizationLevel: 7
+            },
+            pngquant: {
+                speed: 1,
+                strip: true,
+            },
+            gifsicle: {
+               optimizationLevel: 3
+            },
+        }),
 		...PAGES.map(page => new HtmlWebpackPlugin({
 			template: `${PAGES_DIR}/${page}`,
 			filename: `./${page.replace(/\.pug/, '.html')}`
