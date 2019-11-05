@@ -1,0 +1,22 @@
+//- Include the template used on this page
+extends ../../templates/default/default
+
+//- VARIABLES FOR INCLUDE THIS IN USED TEMPLATE
+block variables
+    - var title       = 'Initial Template | technical page'
+    - var description = 'Write description for the page here'
+    - var keywords    = 'Write keywords for the page here'
+    - var pageClass   = 'page-technical'
+    
+//- Conntecting MIXINS for this page
+
+//- Content includes for this page
+block content
+    .container
+        include _colors
+        include _headers
+        include _text
+        include _buttons
+        include _accent
+        include _icons
+        include _links

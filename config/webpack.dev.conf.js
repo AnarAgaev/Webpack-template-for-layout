@@ -1,6 +1,6 @@
-const webpack           = require('webpack'),
-      merge             = require('webpack-merge'),
-      baseWebpackConfig = require('./webpack.base.conf');
+const webpack = require('webpack');
+const merge = require('webpack-merge');
+const baseWebpackConfig = require('./webpack.base.conf');
 
 /**
  * Webpack development configuration

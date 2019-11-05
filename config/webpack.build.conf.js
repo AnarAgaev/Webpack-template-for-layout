@@ -1,6 +1,6 @@
-const merge                = require('webpack-merge'),
-      baseWebpackConfig    = require('./webpack.base.conf'),
-    { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const merge = require('webpack-merge');
+const baseWebpackConfig = require('./webpack.base.conf');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 /**
  * Webpack build configuration
