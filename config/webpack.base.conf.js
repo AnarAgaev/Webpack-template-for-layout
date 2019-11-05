@@ -3,7 +3,8 @@ const path                 = require('path'),
 	  MiniCssExtractPlugin = require('mini-css-extract-plugin'),
 	  CopyWebpackPlugin    = require('copy-webpack-plugin'),
       HtmlWebpackPlugin    = require('html-webpack-plugin'),
-      ImageminPlugin = require('imagemin-webpack-plugin').default;
+      ImageminPlugin       = require('imagemin-webpack-plugin').default,
+      imageminMozjpeg      = require('imagemin-mozjpeg');
 
 const PATHS = {
 	src: path.join(__dirname, '../src'),
@@ -111,8 +112,14 @@ module.exports = {
                 strip: true,
             },
             gifsicle: {
-               optimizationLevel: 3
+               optimizationLevel: 1
             },
+            plugins: [
+                imageminMozjpeg({
+                    quality: 85,
+                    progressive: true
+                })
+            ]
         }),
 		...PAGES.map(page => new HtmlWebpackPlugin({
 			template: `${PAGES_DIR}/${page}`,
