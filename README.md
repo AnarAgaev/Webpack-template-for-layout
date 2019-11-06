@@ -20,6 +20,7 @@
 - add source-maps in development mode
 - LiveServer for relead pages in development mode
 - Babel transporter to support old JavaScript standards
+- separation of JS and CSS into vendor and custom ones to optimize loading
 - integration normalize.css
 - integration  Bootstrap 4 grid
 
@@ -82,7 +83,7 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 ```
 4. Import into the `src/index.js` entry point
 ``` css
-// // Bootstrap grid example:
+// Bootstrap grid example:
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
 ```
 Use either the 3. or 4. method to add one library
