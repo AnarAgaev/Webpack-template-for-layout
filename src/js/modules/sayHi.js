@@ -1,4 +1,4 @@
 // 📁 sayHi.js
-export function sayHi(user) {
-    console.log(`Hello, ${user}!`);
+export function sayHi(word) {
+    console.log(`Hello, ${word}!`);
 }

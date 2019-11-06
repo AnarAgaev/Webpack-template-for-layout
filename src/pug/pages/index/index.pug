@@ -9,9 +9,14 @@ block variables
     - var pageClass   = 'page-index'
     
 //- Conntecting MIXINS for this page
-//- include ../mixins/news
+include ../../mixins/_subscribe
 
 block content
     include _title
     include _images
     include _paragraph
+    
+    .container
+        .row
+            .col-lg-12
+                +subscribe
