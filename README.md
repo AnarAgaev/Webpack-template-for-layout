@@ -1,6 +1,6 @@
 <div align="center">
   <img width="150" height="150" src="https://webpack.js.org/assets/icon-square-big.svg">
-  <h1>Webpack Template</h1>
+  <h1>Webpack layout template for multi-page website</h1>
   <p>
     Webpack is a module bundler. Its main purpose is to bundle JavaScript files for usage in a browser, yet it is also capable of transforming, bundling, or packaging just about any resource or asset.
   </p>
@@ -13,7 +13,7 @@
 - use of SASS as a CSS pre-processor
 - use autoprefixer for adding vendor properties to the CSS
 - minification and optimization of CSS in production mode
-- assembly of media queries into single blocks and mooving at the end of the css stlyle file
+- assembly of media queries into single blocks and mooving at the end of the CSS stlyle file
 - use of PUG as Html pre-processor and template engine
 - Html minification in production mode
 - compression image (jpg, png, svg, gif)
@@ -44,21 +44,23 @@ npm run build
 
 ## Project Structure:
 
-* `src/index.js` - main app file where you include/import all required libs and init app.
-* `src/js` - put the custom app scripts here.
-* `src/scss` - put the custom app SASS styles here. main.scss is main file the rest SASS files are import to it.
-* `src/pug` - put the custom app PUG here.
-* `src/pug/mixins` - in this folder you can put the mixins used throughout the project.
-* `src/pug/templates` - in this folder you can put the custom templates for your the project.
-* `src/pug/pages` - put the custom app PUG files in folders at this directory. **Each page has its own folder. The main file of the page in the folder should be called index.pug.** Include the page components in the main PUG file.
-* `src/img` - put images here. Don't forget to use correct path: `img/some.jpg`.
-* `src/font` - put the custom fonts for your project in this folder.
-* `static/` - folder with additional static resources to be copied to the root of the output folder.
-
+* `src/index.js` - main app file where you include/import all required libs and init app
+* `src/js` - put the custom app scripts here
+* `src/scss` - put the custom app SASS styles here. main.scss is main file the rest SASS files are import to it
+* `src/pug` - put the custom app PUG here
+* `src/pug/mixins` - in this folder you can put the mixins used throughout the project
+* `src/pug/templates` - in this folder you can put the custom templates for your application
+* `src/pug/pages` - put the custom app PUG files in folders at this directory. **Each page has its own folder. The main file of the page in the folder should be called index.pug.** Include the page components in the main PUG file
+* `src/img` - put images here. Don't forget to use correct path: `img/some.jpg`
+* `src/font` - put the custom fonts for your project in this folder
+* `static/` - folder with additional static resources to be copied to the root of the output folder
+  
+  
 <div align="center">
   <h2>Settings:</h2>
 </div>
-
+  
+  
 ## Import Another libs:
 1. Install libs
 2. Import libs in `src/index.js`
@@ -78,13 +80,19 @@ import 'bootstrap/dist/js/bootstrap.min.js'
 // CSS librarys example:
 @import '../../node_modules/flickity/dist/flickity.css';
 ```
+4. Import into the `src/index.js` entry point
+``` css
+// // Bootstrap grid example:
+import 'bootstrap/dist/css/bootstrap-grid.min.css';
+```
+Use either the 3. or 4. method to add one library
 
 ## Import js files:
 1. Create another js module in `src/js/modules` folder
 2. Import modules in `src/js/main.js` file
 
 ## Create new HTML pages:
-* Each page has its own folder.
+**Each page has its own folder!**
 1. Create your own folder for each page in `src/pug/pages/`
 2. Create `index.pug` file in your page folder. Created file must have the name **index.pug**
 3. Сreate components for the page in the folder 
