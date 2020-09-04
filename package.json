@@ -38,7 +38,7 @@
 		"imagemin-mozjpeg": "^8.0.0",
 		"imagemin-webpack-plugin": "^2.4.2",
 		"mini-css-extract-plugin": "^0.8.0",
-		"node-sass": "^4.13.0",
+		"node-sass": "^4.13.1",
 		"normalize.css": "^8.0.1",
 		"path": "^0.12.7",
 		"postcss-loader": "^3.0.0",
